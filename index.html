@@ -1,1 +1,136 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Baby ♡</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  color: #514260;
+  background: linear-gradient(145deg, #f9f0ff, #e8dafa, #fceefa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+main { width: 100%; max-width: 480px; text-align: center; }
+.moon { font-size: 42px; margin-bottom: 12px; }
+.small { font-size: 11px; letter-spacing: 4px; color: #9275ad; }
+h1 { font-size: 34px; font-weight: normal; margin: 15px 0; }
+.intro { font-size: 15px; line-height: 1.8; }
+.envelope {
+  margin: 32px auto 18px;
+  width: 210px;
+  height: 145px;
+  background: #c9a8e5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 12px 30px #9275ad40;
+}
+.envelope::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #b995d8;
+  clip-path: polygon(0 0, 50% 58%, 100% 0);
+}
+.seal {
+  z-index: 1;
+  background: #fff5fc;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+button {
+  font-family: inherit;
+  font-size: 15px;
+  color: white;
+  background: #8e6aab;
+  border: none;
+  border-radius: 28px;
+  padding: 13px 25px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+button:active { transform: scale(.97); }
+#letter {
+  display: none;
+  margin-top: 28px;
+  padding: 25px 21px;
+  background: #fffaffd9;
+  border: 1px solid #ead9f4;
+  border-radius: 15px;
+  text-align: left;
+  line-height: 1.9;
+  font-size: 15px;
+  white-space: pre-line;
+}
+#letter h2 { text-align: center; font-weight: normal; line-height: 1.4; }
+footer { margin-top: 30px; font-size: 13px; color: #8d769c; }
+</style>
+</head>
+<body>
+<main>
+  <div class="moon">🌙 ♡</div>
+  <div class="small">JANUARY 25, 2027</div>
+  <h1>Happy Birthday, Baby</h1>
+  <p class="intro">
+    To my favourite idiot, my baby, my mama. 🤍<br>
+    I made a little something just for you.
+  </p>
+
+  <div class="envelope"><div class="seal">♡</div></div>
+  <p>There's a little letter waiting for you.</p>
+  <button onclick="openLetter()">Open your letter 💌</button>
+
+  <article id="letter">
+    <h2>Happy Birthday, Mama ❤️</h2>
+    Happy birthday, baby! ❤️
+
+    First of all, you're getting older, but unfortunately for you, you're still stuck with me. 😂 No refunds, okay?
+
+    Jokes apart, I really wish I could be there with you today. I wish I could see your face, annoy you in person, and wish you happy birthday without a whole country between us.
+
+    Sometimes I wish I could just come and see you whenever I wanted. Long distance is really unfair like that. 🥹
+
+    But even with all this distance, I'm so happy you're a part of my life. I love our random conversations, our silly moments, and all the little things that make us us.
+
+    I know work and life can be tiring sometimes, baby. I hope this new year brings you happiness, good health, peaceful days, proper sleep, and lots of reasons to smile. Please take care of yourself, okay? I can't come there to check whether you've eaten, so don't make my job harder. 😒❤️
+
+    I might tease you a lot, act silly, and annoy you for no reason, but underneath all that, you really mean a lot to me.
+
+    If I could wish for one thing today, it would be to spend your birthday beside you, doing absolutely nothing special, just being with you.
+
+    Until that day comes, here's a little piece of my heart through this screen. 🌙
+
+    I love you, birthday boy. Happy birthday again, my baby, my mama. ❤️
+
+    And don't get too proud after reading this. You're still my idiot, and I'm still going to bully you. 😂🤏🏻
+
+    Yours,
+    Your girl ♡
+  </article>
+
+  <footer>Different places, same little us. 🌙❤️</footer>
+</main>
+<script>
+function openLetter() {
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+  letter.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+</body>
+</html>
+
